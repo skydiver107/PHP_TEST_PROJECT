@@ -1,0 +1,40 @@
+{% extends 'tpl.container.twig' %}
+
+{% import 'tpl.sidebar.twig' as sidebar %}
+{% import 'tpl.deal-topbar.twig' as topbar %}
+
+{% block tpl_grid %}
+	<div class="container-fluid">
+		{{ sidebar.tpl_sidebar }}
+		<div id="stage">
+			{{ topbar.tpl_deal_topbar }}
+			<div id="content-container">
+				<div id="content">
+					<div class="container-fluid content-header">
+						<div class="report-table table-responsive">
+							<table class="table table-striped table-bordered dt-responsive nowrap no-footer importedDealsCustomTable" id = "myTable">
+								<thead class ="header">
+									<tr>
+										<th>Client Name</th>
+										<th>Client Phone</th>
+										<th>Year</th>
+										<th>Stock</th>
+										<th>Model</th>
+										<th>Make</th>
+										<th>Lender</th>
+										<th>Imported Date</th>
+										<th>Actions</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+
+	
+</script>
+{% endblock %}
